@@ -1,0 +1,67 @@
+
+/*
+h1 {
+  color: skyblue;
+}
+
+.info {
+  color: skyblue;
+}
+
+.title {
+  font-weight: normal;
+}
+
+#title {
+  color: pink;
+}
+
+h1::before, h2::before {
+  content: "- ";
+}
+
+h1::after, h2::after {
+  content: " -";
+}
+
+.btn {
+  width: 100px;
+  background-color: skyblue;
+  text-align: center;
+  padding: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+main > :nth-child(odd) {
+  background-color: pink;
+}
+
+main > :nth-child(even) {
+  background-color: aqua;
+}
+
+main > :first-child {
+  background-color: red;
+}
+
+main > :last-child {
+  background-color: green;
+}
+
+main > h2:nth-of-type(3) {
+  background-color: violet;
+}
+
+li:empty {
+  background-color: pink;
+}
+
+li:not(:empty) {
+  background-color: green;
+}
+*/

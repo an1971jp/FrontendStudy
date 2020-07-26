@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ドットインストール</title>
+</head>
+<body>
+  <label for="">好きな色</label>
+  <select name="" id="color">
+    <option>色1</option>
+    <option>色2</option>
+    <option>色3</option>
+    <option>色4</option>
+    <option>色5</option>
+    <option>色6</option>
+  </select>
+  <br>
+  <fieldset>
+    <legend>お使いのスマホ</legend>
+    <label><input type="checkbox">iPhone</label>
+    <label><input type="checkbox">Android</label>
+    <label><input type="checkbox">その他</label>
+  </fieldset>
+  <fieldset>
+    <legend>一番好きなスマホ</legend>
+    <label><input type="radio" name="phone" checked>iPhone</label>
+    <label><input type="radio" name="phone"> Android</label>
+    <label><input type="radio" name="phone">その他</label>
+  </fieldset>
+
+  <input type="button" value="OK">
+  <button>OK</button>
+  <input type="button" value="OK" disabled>
+  <button disabled>OK</button>
+
+  <!-- 入力した値をプログラムに送信する -->
+  <form action="process.php" method="post">
+    <label for="">担当者名 <input type="text" name="username"></label>
+    <label for="">タスク <input type="text" name="task"></label>
+    <button>追加</button>
+  </form>
+
+  <!-- 古いブラウザではサポートされない -->
+  <p><input type="color"></p>
+  <p><input type="date"></p>
+  <p><input type="number"></p>
+  <p><input type="range"></p>
+</body>
+</html>

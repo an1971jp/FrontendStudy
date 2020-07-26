@@ -1,0 +1,126 @@
+/* Command + / でコメント行、 Shift + Option + ↓ で行をコピー */
+
+header {
+  height: 80px;
+  background-color: pink;
+  background-image: url(../img/header.png);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+/*
+  font-family: Verdana, メイリオ, sans-serif;
+  color: red;
+  font-size: 48px;
+  text-align: center;
+  text-decoration: line-through;
+*/
+}
+
+h2 {
+  clear: right;
+}
+
+p {
+  font-size: 16px;
+  /* line-height: 48px; */
+  /* line-height: 3; */
+  /* background-color: pink; */
+  /* text-decoration: underline; */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: baseline;
+  float: right;
+}
+
+ul {
+  /* list-style-type: circle; */
+  /* list-style-position: inside; */
+  /* list-style-image: url(../img/icon.png); */
+  list-style: circle inside url(../img/icon.png);
+}
+
+ol {
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: none; */
+  list-style: inside lower-alpha;
+}
+
+.info {
+  color: blue;
+}
+
+.box1 {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  /* box-shadow: 10px 5px rgba(0, 0, 0, 0.3); */
+  /* width: calc((100% - 40px) / 3); */
+  /* left: 0; */
+  /* top: 0; */
+  /* position: absolute; */
+  /* z-index: 3; */
+  /* margin: 0 0 10px 0; */
+}
+
+.box2 {
+  background-color: skyblue;
+  width: 100px;
+  /* width: calc((100% - 40px) / 3); */
+  height: 100px;
+  /* box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3); */
+  /* margin: 0 auto; */
+  /* box-sizing: border-box; */
+  /* border: 10px solid blue; */
+  /* top: 30px; */
+  /* left: 30px; */
+  /* position: absolute; */
+  /* z-index: 2; */
+  /* position: relative; */
+  /* position: fixed; */
+  /* left: 30px; */
+  /* top: 30px; */
+  /* border: solid 3px blue; */
+  /* padding: 10px; */
+  /* border-bottom: none; */
+  /* border-bottom: solid 3px blue; */
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+}
+
+.box3 {
+  background-color: tomato;
+  width: 100px;
+  /* width: calc((100% - 40px) / 3); */
+  height: 100px;
+  /* box-shadow: 10px 5px 3px 10px rgba(0, 0, 0, 0.3); */
+  /* margin-left: auto; */
+  /* top: 60px; */
+  /* left: 60px; */
+  /* position: absolute; */
+  /* z-index: 1; */
+  /* display: inline-block; */
+  /* margin-top: 10px; */
+}
+
+.ok {
+  width: 80px;
+  height: 40px;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+/*
+.rect {
+  width: 50px;
+  height: 20px;
+  color: lime;
+  position: absolute;
+}
+ */
