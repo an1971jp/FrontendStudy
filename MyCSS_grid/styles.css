@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+
+  width: 400px;
+  height: 300px;
+  background: #eee;
+
+  justify-content: center;
+  align-content: center;
+
+  justify-items: center;
+  align-items: center;
+
+  /*
+  grid-template-areas:
+    "r r r y y"
+    "r r r y y"
+    "c c g y y"
+    "c c b y y";
+ */
+  /* grid-template-columns: 100px 100px 100px; */
+  /* grid-template-rows: 100px 100px; */
+  /* grid-template-columns: repeat(auto-fill, 100px); */
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  /* grid-auto-flow: row; */
+  /* grid-auto-flow: column dense; */
+  /* grid-auto-columns: 100px; */
+  /* grid-auto-rows: 100px; */
+
+  /* gap: 20px 40px; */
+  /* grid-template-columns: 100px 100px; */
+  /* grid-template-rows: 100px 100px 100px; */
+  /* grid-template-columns: 100px [target-start] 100px 100px [target-end]; */
+  /* grid-template-columns: 100px 2fr 1fr; */
+  /* grid-template-rows: 100px 100px; */
+}
+
+.container > div {
+  width: 50px;
+  height: 50px;
+}
+
+.box1 {
+  background: hsl(0, 60%, 60%);
+  justify-self: start;
+  align-self: start;
+
+  /* grid-area: r; */
+/*
+  grid-row: 2; */
+  /* grid-column: 2;
+  grid-column: 2 / 4;
+  grid-column: target-start / target-end;
+ */
+}
+
+.box2 {
+  background: hsl(60, 60%, 60%);
+  /* grid-area: y; */
+  /* grid-column: span 2; */
+  /* grid-row: span 2; */
+}
+
+.box3 {
+  background: hsl(120, 60%, 60%);
+  /* grid-area: g; */
+  /* grid-column: span 2; */
+  /* grid-row: span 2; */
+}
+
+.box4 {
+  background: hsl(180, 60%, 60%);
+  /* grid-area: c; */
+}
+
+.box5 {
+  background: hsl(240, 60%, 60%);
+  /* grid-area: b; */
+}
