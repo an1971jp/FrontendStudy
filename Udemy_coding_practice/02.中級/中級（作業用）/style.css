@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/* ここから実際のページ用 */
+
+body {
+  border-top: 5px solid #345c39;
+  background: url(images/bg.png);
+  font-family: "メイリオ", Meiryo;
+}
+
+#wrapper {
+  /* margin 0 auto は width とセットでなければ適用できない */
+  width: 960px;
+  margin: 0 auto;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 7px rgba(83, 78, 61, 0.3);
+}
+
+header {
+  width: 960px;
+  height: 49px;
+  padding: 20px 0;
+  position: relative;
+}
+
+header h1 {
+  float: left;
+  background: url(images/logo.png) no-repeat;
+  font-size: 12px;
+  color: #555555;
+  padding-left: 51px;
+  line-height: 1;
+  /* height: 49px; */
+}
+
+header h1 span {
+  font-size: 33px;
+  color: #734339;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul li {
+  float: left;
+  margin-left: 29px;
+  margin-top: 35px;
+}
+
+header nav ul li:hover {
+  background: url(images/navbar.png) no-repeat center bottom;
+  height: 36px;
+  display: inline-block;
+}
+
+header nav ul li a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #734339;
+  text-decoration: none;
+  height: 26px;
+}
+
+header nav ul li:hover a {
+  color: #345c39;
+  border-bottom: 4px solid #345c39;
+}
+
+p#nav_tel {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+#mainimage {
+  width: 950px;
+  height: 290px;
+  margin: 20px 0;
+  border: 5px solid white;
+}
+
+#left {
+  padding: 10px;
+  width: 555px;
+  height: 170px;
+  background-color: white;
+  float: left;
+  margin-right: 20px;
+}
+
+#left h2 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #734339;
+  border-left: 5px solid #ba3009;
+  padding-left: 10px;
+}
+
+#left ul {
+  overflow: scroll;
+  width: 555px;
+  height: 145px;
+}
+
+#left ul li {
+  font-size: 13px;
+  font-weight: normal;
+  color: #927e7a;
+  border-bottom: 1px dotted #d0d0d0;
+  line-height: 32px;
+}
+
+#left ul li span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #b5b3b3;
+  margin-right: 15px;
+}
+
+#right {
+  width: 365px;
+  height: 190px;
+  float: left;
+}
+
+#right ul li {
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+#right ul li a {
+  display: block;
+  width: 225px;
+  height: 60px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #734339;
+  text-decoration: none;
+  padding-left: 140px;
+}
+
+#right ul li a#contact {
+  background: url(images/contact.jpg);
+}
+
+#right ul li a#blog {
+  background: url(images/blog.jpg);
+}
+
+footer {
+  width: 100%;
+  height: 58px;
+  background-color: #345c39;
+  margin-top: 20px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  line-height: 58px;
+}
