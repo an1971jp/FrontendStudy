@@ -264,3 +264,58 @@ h2#heading {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.form_title {
+  width: 131px;
+  height: 32px;
+  font-size: 15px;
+  color: #734339;
+  vertical-align: top;
+}
+
+.form_title label {
+  font-weight: bold;
+}
+
+.form_contents {
+  font-size: 13px;
+  color: #a6a6a6;
+}
+
+.form_contents input#form_name,
+.form_contents input#form_tel {
+  width: 421px;
+  height: 22px;
+}
+
+.form_contents input.form_time {
+  width: 47px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.form_contents textarea {
+  width: 421px;
+  height: 83px;
+  border: 1px solid #a6a6a6;
+}
+
+p#submit {
+  text-align: right;
+}
+
+p#submit input {
+  background-color: #325a37;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  width: 136px;
+  height: 40px;
+}
+
+p#submit input:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

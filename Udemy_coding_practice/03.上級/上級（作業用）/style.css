@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/* ここから実際のページ用 */
+body {
+  font-family: "メイリオ", Meiryo;
+  color: #434343;
+  background-color: #f6f6f6;
+}
+
+a {
+  color: #434343;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+header {
+  width: 100%;
+  height: 77px;
+  background-color: white;
+  border-bottom: 3px solid orange;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  padding-top: 25px;
+}
+
+#header_inner {
+  width: 960px;
+  height: 52px;
+  margin: 0 auto; /* 左右中央揃え */
+}
+
+header h1 {
+  float: left;
+}
+
+nav {
+  font-size: 18px;
+  float: right;
+  margin-top: 30px;
+}
+
+nav ul li {
+  float: left;
+  border-left: 1px dotted #434343;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+nav ul li:last-child {
+  border-right: 1px dotted #434343;
+  padding-right: 20px;
+}
+
+#main_wrapper {
+  width: 960px;
+  height: auto;
+  margin: 30px auto 0 auto;
+}
+
+div#top_pickup {
+  width: 582px;
+  height: 360px;
+  background-color: orange;
+  float: left;
+  margin-right: 30px;
+}
+
+div#top_ranking {
+  width: 348px;
+  height: 360px;
+  float: left;
+  background-color: green;
+}
