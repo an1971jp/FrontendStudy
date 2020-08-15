@@ -632,17 +632,26 @@ main {
   color: #222222;
 }
 
-#topics dt {
+#topics li {
   font-weight: normal;
   font-size: 14px;
   height: 30px;
   line-height: 30px;
 }
 
+#topics dt {
+  font-weight: normal;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+
 #topics dd {
   font-size: 14px;
   height: 30px;
   line-height: 30px;
+  float: left;
 }
 
 #topics a {
@@ -674,6 +683,7 @@ footer {
   height: 63px;
   border-top: 3px solid #0060a3;
   padding-top: 15px;
+  background-color: rgb(218, 216, 216);
 }
 
 #footer_inner {
@@ -683,5 +693,5 @@ footer {
 
 #footer_inner p {
   text-align: right;
-  font-size: 14px;
+  font-size: 13px;
 }
