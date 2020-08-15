@@ -613,7 +613,10 @@ main {
 }
 
 #topics {
-  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 700px;
+  text-align: left;
+  /* margin: 0 auto; */
 }
 
 #topics h2 {
@@ -629,13 +632,20 @@ main {
   color: #222222;
 }
 
-#product tr {
+#topics dt {
+  font-weight: normal;
   font-size: 14px;
   height: 30px;
   line-height: 30px;
 }
 
-#product a {
+#topics dd {
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#topics a {
   text-decoration: underline;
   color: blue;
 }
