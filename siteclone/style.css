@@ -550,17 +550,21 @@ header nav {
 
 header nav ul li {
   float: left;
+  width: 200px;
+  height: 53px;
+  background-color: rgb(238, 238, 238);
+  border-right: 1px solid gray;
 }
 
 header nav ul li a {
+  display: block;
   font-size: 14px;
   display: block;
   width: 200px;
-  line-height: 27px;
+  line-height: 20px;
   text-align: center;
-  border-right: 1px solid gray;
-  background-color: rgb(238, 238, 238);
-  /* width: calc(100% / 5); */
+  /* border-right: 1px solid gray; */
+  /* background-color: rgb(238, 238, 238); */
 }
 
 header nav ul li a:hover {
