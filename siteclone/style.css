@@ -556,7 +556,7 @@ header nav ul li a {
   font-size: 14px;
   display: block;
   width: 200px;
-  line-height: 50px;
+  line-height: 27px;
   text-align: center;
   border-right: 1px solid gray;
   background-color: rgb(238, 238, 238);
@@ -570,7 +570,7 @@ header nav ul li a:hover {
 header nav ul li a span {
   display: block;
   font-size: 10px;
-  line-height: 3px;
+  /* line-height: 3px; */
   color: #246baa;
 }
 
@@ -595,7 +595,7 @@ main {
 
 #right {
   width: 682px;
-  height:470px;
+  height: 470px;
   float: right;
 }
 
@@ -605,18 +605,17 @@ main {
   border-left: 5px solid #0060a3;
   border-bottom: 3px dotted #a3a3a4;
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 110%;
   padding-left: 10px;
   line-height: 2em;
   color: #222222;
 }
 
 #topics {
+  display: block;
   margin-bottom: 20px;
   width: 700px;
   text-align: left;
-  /* margin: 0 auto; */
+  margin: 0 auto 40px auto;
 }
 
 #topics h2 {
@@ -625,8 +624,6 @@ main {
   border-left: 5px solid #0060a3;
   border-bottom: 3px dotted #a3a3a4;
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 110%;
   padding-left: 10px;
   line-height: 2em;
   color: #222222;
@@ -651,7 +648,9 @@ main {
   font-size: 14px;
   height: 30px;
   line-height: 30px;
-  float: left;
+  display: block;
+  margin-left: 120px;
+  /* float: left; */
 }
 
 #topics a {
@@ -660,19 +659,27 @@ main {
 }
 
 #contact {
+  display: block;
   width: 200px;
   height: 80px;
   background-color: #2b51ce;
   color: white;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
+  text-align: center;
 }
 
 #contact:hover {
   opacity: 0.7;
 }
 
-#top a {
+#top {
+  width: 1000px;
+  height: 20px;
   text-align: right;
+  margin-bottom: 20px;
+}
+
+#top a {
   text-decoration: underline;
   color: blue;
 }
