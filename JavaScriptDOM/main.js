@@ -80,13 +80,90 @@
   //   text.focus();
   // });
 
-  // セレクトボックスの操作
-  document.querySelector('button').addEventListener('click', () => {
-    const li = document.createElement('li');
-    const color = document.querySelector('select');
-    li.textContent = `${color.value} - ${color.selectedIndex}`;
-    document.querySelector('ul').appendChild(li);
-  });
+  // // セレクトボックスの操作
+  // document.querySelector('button').addEventListener('click', () => {
+  //   const li = document.createElement('li');
+  //   const color = document.querySelector('select');
+  //   li.textContent = `${color.value} - ${color.selectedIndex}`;
+  //   document.querySelector('ul').appendChild(li);
+  // });
 
+  // 試しにh1を操作
+  // const h1 = document.querySelector('h1');
+  // h1.addEventListener('click', () => {
+  //   h1.textContent = 'aaa';
+  // });
+
+  // ラジオボタンの操作
+  // document.querySelector('button').addEventListener('click', () => {
+  //   const colors = document.querySelectorAll('input');
+  //   let selectedColor;
+  //   colors.forEach(color => {
+  //     if (color.checked === true) {
+  //       selectedColor = color.value;
+  //     }
+  //   });
+  //   const li = document.createElement('li');
+  //   li.textContent = selectedColor;
+  //   document.querySelector('ul').appendChild(li);
+  // });
+
+  // // チェックボックスの操作
+  // document.querySelector('button').addEventListener('click', () => {
+  //   const colors = document.querySelectorAll('input');
+  //   const selectedColors = [];
+  //   colors.forEach(color => {
+  //     if (color.checked === true) {
+  //       selectedColors.push(color.value);
+  //     }
+  //   });
+  //   const li = document.createElement('li');
+  //   li.textContent = selectedColors.join(',');
+  //   document.querySelector('ul').appendChild(li);
+  // });
+
+  // // 各種イベント
+  // document.querySelector('button').addEventListener('dblclick', () => {
+  //   console.log('Double Click!');
+  // });
+
+  // document.addEventListener('mousemove', e => {
+  //   // console.log('Moved!');
+  //   console.log(e.clientX, e.clientY);
+  // });
+
+  // document.addEventListener('keydown', e => {
+  //   console.log(e.key);
+  // });
+
+  const text = document.querySelector('textarea');
+
+  // text.addEventListener('focus', () => {
+  //   console.log('Focus!');
+  // });
+
+  // text.addEventListener('blur', () => {
+  //   console.log('Blur!');
+  // });
+
+  // text.addEventListener('input', () => {
+  //   console.log('Input!');
+  //   console.log(text.value.length);
+  // });
+
+  // text.addEventListener('change', () => {
+  //   console.log('Changed!');
+  // });
+
+  // document.querySelector('form').addEventListener('submit', e => {
+  //   e.preventDefault();
+  //   console.log('submit!');
+  // });
+
+  document.querySelector('ul').addEventListener('click', e => {
+    if (e.target.nodeName === 'LI') {
+      e.target.classList.toggle('done');
+    }
+  });
 
 }
