@@ -81,31 +81,40 @@
   */
 
   const gu = document.getElementById('gu');
-  gu.addEventListener('click', () => {
-    selectedItem = 0;
-
-    choiceEnemy();
-    checkResult();
-
-  });
-
   const choki = document.getElementById('choki');
-  choki.addEventListener('click', () => {
-    selectedItem = 1;
-
-    choiceEnemy();
-    checkResult();
-
-  });
-
   const pa = document.getElementById('pa');
-  pa.addEventListener('click', () => {
-    selectedItem = 2;
 
-    choiceEnemy();
-    checkResult();
+  const array = [gu, choki, pa];
+
+  array.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      selectedItem = index;
+
+      choiceEnemy();
+      checkResult();
+    });
 
   });
+
+
+
+  // const choki = document.getElementById('choki');
+  // choki.addEventListener('click', () => {
+  //   selectedItem = 1;
+
+  //   choiceEnemy();
+  //   checkResult();
+
+  // });
+
+  // const pa = document.getElementById('pa');
+  // pa.addEventListener('click', () => {
+  //   selectedItem = 2;
+
+  //   choiceEnemy();
+  //   checkResult();
+
+  // });
 
   const replay = document.getElementById('replay');
   replay.addEventListener('click', () => {

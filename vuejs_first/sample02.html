@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>分岐とループ</title>
+</head>
+<body>
+  <div id="app">
+    <!-- v-if ディレクティブ -->
+    <p v-if="error">エラーです</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        error: true
+      }
+    });
+  </script>
+</body>
+</html>
