@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>フィルター</title>
+        <style>
+            p {
+                font-size: 2em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="app">
+            <label for="num">数値: </label>
+            <input name="num" type="number" v-model.number="num" />
+            <p>{{ num | addComma('円') }}</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        <script src="./filterArg1.js"></script>
+    </body>
+</html>

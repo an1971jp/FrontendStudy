@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>checkbox</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <h1>行ってみたい国は？</h1>
+            <label for=”england">イギリス</label>
+            <input id="england" type="checkbox" v-model="countries" value="イギリス" />
+            <label for="usa">アメリカ</label>
+            <input id="usa" type="checkbox" v-model="countries" value="アメリカ" />
+            <label for="china">中国</label>
+            <input id="china" type="checkbox" v-model="countries" value="中国" />
+            <label for="spain">スペイン</label>
+            <input id="spain" type="checkbox" v-model="countries" value="スペイン" />
+            <br />
+            <button @click="countries=[]">クリア</button>
+            <ul>
+                <li v-for="c in countries">{{ c }}</li>
+            </ul>            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+        <script src="./checkbox3.js"></script>
+    </body>
+</html>

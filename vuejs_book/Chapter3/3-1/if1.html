@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>v-if</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <button @click="show = !show">表示/非表示</button>
+            <div>
+                <img
+                    src="figs/photo1.png"
+                    width="300"
+                    height="225"
+                    v-if="show"
+                />
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+        <script src="./if1.js"></script>
+    </body>
+</html>

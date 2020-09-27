@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Vue.jsテスト</title>
+    <style>
+        p {
+            font-size: 32px;
+            /* font-size: 2em; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <p>今年は{{ (new Date()).getFullYear() }}年</p>
+        <p>{{ num }} -> 切り捨て -> {{ Math.floor(num) }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="./math-date1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html adult="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>v-model radiobutton</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <h1>行ってみたい国は？</h1>
+            <select v-model="countries" multiple>
+                <option>イギリス</option>
+                <option value="USA">アメリカ</option>
+                <option>中国</option>
+                <option>スペイン</option>
+            </select>
+            <br />
+            <button v-on:click="countries=[]">クリア</button>
+            <ul>
+                <li v-for="c in countries">{{ c }}</li>
+            </ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+        <script src="./select2.js"></script>
+
+    </body>
+</html>
