@@ -6,7 +6,7 @@
     <title>クラスの設定</title>
     <style>
         .center {
-            text-align: center
+            text-align: center;
         }
         .big {
             font-size: 4em;
@@ -18,7 +18,9 @@
 <body>
     <div id="app">
         <button @click="enhance=!enhance">クリックして</button>
-        <p v-bind:class="{center: true, big: enhance}">Vue.jsの世界</p>        
+        <button @click="centerflg=!centerflg">クリックして</button>
+        <p v-bind:class="{center: centerflg, big: enhance}">Vue.jsの世界</p>
+        <!-- <p v-bind:class="{center: true, big: enhance}">Vue.jsの世界</p> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
     <script src="./class1.js"></script>

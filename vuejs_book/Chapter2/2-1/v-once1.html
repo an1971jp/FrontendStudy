@@ -12,7 +12,7 @@
 
     <body>
         <div id="app">
-            <button @click="msg1 = 'さようなら'">クリックして</button>
+            <button v-on:click="msg1 = 'さようなら'">クリックして</button>
             <p v-once>{{ msg1 }}</p>
             <p>{{ msg1 }}</p>
         </div>

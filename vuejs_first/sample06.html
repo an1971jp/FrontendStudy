@@ -8,12 +8,22 @@
       .flip-list-move {
         transition: transform 0.5s;
       }
+      /* .flip-list-enter {
+        opacity: 0;
+      }
+      .flip-list-enter-to {
+        opacity: 1;
+      }
+      .flip-list-enter-active {
+        transition: transform 0.5s;
+      } */
   </style>
 
 </head>
 <body>
   <div id="app">
     <button v-on:click="shuffle">シャッフル</button>
+    <!-- <button v-on:click="prefs.push({name:'aaa'})">push</button> -->
     <transition-group name="flip-list" tag="ul">
       <li v-for="pref in prefs" v-bind:key="pref.name">
         {{ pref.name }}

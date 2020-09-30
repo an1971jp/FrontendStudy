@@ -7,8 +7,10 @@
 
     <body>
         <div id="app">
-            <p>{{ msg1 }}</p>
-            <p v-html="msg1"></p>
+            <p>{{ msg1 }}</p>   <!-- そのまま表示 -->
+            <p v-html="msg1"></p>   <!-- HTMLを展開して表示 -->
+            <p>{{ msg2 }}</p>   <!-- そのまま表示 -->
+            <p v-html="msg2"></p>   <!-- HTMLを展開して表示 -->
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
         <script src="./v-html1.js"></script>

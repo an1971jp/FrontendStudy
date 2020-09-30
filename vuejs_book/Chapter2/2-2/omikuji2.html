@@ -8,6 +8,7 @@
     <body>
         <div id="app">
             <button name="myBtn" v-on:click="uranau()">占う</button>
+            <!-- HTMLの中に変数を適用させたい場合はv-bindを用いる {{ }} は書けない -->
             <div><img v-bind="imageAttrs" /></div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
